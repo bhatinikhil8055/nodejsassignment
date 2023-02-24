@@ -11,9 +11,9 @@ const auth = require("./src/middleware/auth")
 require("./src/db/conn");
 const userregister = require("./src/models/userregister");
 
-const static_path = path.join(__dirname,"../public" );
-const views_path = path.join(__dirname,"../templates/views" );
-const partials_path = path.join(__dirname,"../templates/partials" );
+const static_path = path.join(__dirname,"./public" );
+const views_path = path.join(__dirname,"./templates/views" );
+const partials_path = path.join(__dirname,"./templates/partials" );
 app.use(express.static(static_path));
 app.use(express.json()); 
 app.use(cookieparser());      
